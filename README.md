@@ -1,6 +1,6 @@
 # Face Recognition Identification System
 
-A face recognition system developed as part of the Code Nimbus Solutions AI/ML internship assignment.
+A face recognition system developed as part of the Code Nimbus Solutions AI/ML Internship Assignment.
 
 The system can enroll a person's face, generate a face embedding, store it locally, and identify a new face by comparing it with enrolled faces. If the similarity score is below the selected threshold, the system returns **Unknown**.
 
