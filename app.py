@@ -28,8 +28,11 @@ app = load_model()
 # Load database
 @st.cache_data
 def load_database():
-    with open("data/database/embeddings.json", "r") as f:
-        return json.load(f)
+    try:
+        with open("data/database/embeddings.json", "r") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        return {}
 
 database = load_database()
 
